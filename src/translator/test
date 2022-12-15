@@ -1,0 +1,5 @@
+let res = scan();
+    while(res != EOF){
+        print(res);
+        res = scan();
+    }
