@@ -1,5 +1,2 @@
-let res = scan();
-    while(res != EOF){
-        print(res);
-        res = scan();
-    }
+let temp = "hello,world";
+print(temp);
