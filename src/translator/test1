@@ -1,7 +1,7 @@
-let temp = 0;
-scanf(temp);
+let temp = "";
+input(temp);
 while (temp != EOF)
 {
-    print(temp);
-    scanf(temp);
+print(temp);
+input(temp);
 }

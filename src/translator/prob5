@@ -1,10 +1,18 @@
+let n = 2520;
 let i = 20;
-let n = 10;
-if (n > 0)
+while (i > 0)
+{
+if (n % i == 0)
 {
 i = i - 1;
 }
 else
 {
-i = i + 1;
+n = n + 2520;
+i = 20;
+}
+if (i == 1)
+{
+print(n);
+}
 }
