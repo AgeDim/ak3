@@ -13,6 +13,7 @@ class DataPath:
         self.output_buffer = []
         self.input_buffer = input_buffer
         self.acc = 0
+        self.val_to_ld = 0
         self.registers = {
             'ir': 0,  # input register
             'or': 0,  # output register
@@ -74,7 +75,7 @@ class ALU:
         return acc
 
     def dec(self, acc):
-        acc -= 1
+        acc = int(acc) - 1
         self.data_path.set_flags(acc)
         return acc
 
@@ -131,9 +132,11 @@ class ControlUnit:
         jmp_instr = False
 
         if opcode is Opcode.HALT:
+            self.tick()
             raise StopIteration()
 
         if opcode is Opcode.LD:
+            self.tick()
             if re.match(r'0x\d*', str(cur_instr['arg1'])) is not None:
                 temp = int(cur_instr['arg1'].split("x")[1])
                 self.data_path.acc = self.data_path.data_mem[temp]
@@ -142,21 +145,23 @@ class ControlUnit:
 
         if opcode is Opcode.ST:
             self.data_path.write(int(cur_instr['arg1'].split("x")[1]))
-            self.data_path.latch_data_mem_counter(True)
+            self.tick()
 
         if opcode is Opcode.JUMP:
-            self.data_path.val_to_ld = cur_instr['arg2'] + 1
+            self.data_path.val_to_ld = cur_instr['arg2'] - 1
             self.data_path.latch_program_counter(False)
+            self.tick()
             jmp_instr = True
 
         if opcode in {Opcode.INC, Opcode.DEC}:
+            self.tick()
             if opcode is Opcode.INC:
                 self.data_path.acc = self.alu.inc(self.data_path.acc)
             if opcode is Opcode.DEC:
                 self.data_path.acc = self.alu.dec(self.data_path.acc)
 
-        # сделать адресное
         if opcode in {Opcode.ADD, Opcode.SUB, Opcode.MUL, Opcode.MOD, Opcode.DIV}:
+            self.tick()
             if re.match(r'0x\d*', str(cur_instr['arg1'])) is not None:
                 temp = self.data_path.data_mem[int(cur_instr['arg1'].split("x")[1])]
             else:
@@ -174,9 +179,11 @@ class ControlUnit:
 
         # посмотреть прыги
         if opcode in {Opcode.JLE, Opcode.JL, Opcode.JNE, Opcode.JE, Opcode.JG, Opcode.JGE}:
+            self.tick()
             arg1 = cur_instr['arg1']
             self.data_path.acc = self.alu.sub(self.data_path.acc, arg1)
-            self.data_path.val_to_ld = cur_instr['arg2']
+            self.data_path.val_to_ld = cur_instr['arg2'] - 1
+
             if opcode is Opcode.JLE:
                 if self.data_path.zero_flag or self.data_path.neg_flag:
                     self.data_path.latch_program_counter(False)
@@ -208,9 +215,11 @@ class ControlUnit:
                     jmp_instr = True
 
         if opcode is Opcode.PRINT:
+            self.tick()
             self.data_path.output(cur_instr['arg1'])
 
         if opcode is Opcode.INPUT:
+            self.tick()
             self.data_path.input()
             self.data_path.latch_data_mem_counter(True)
         self.data_path.drop_flags()
