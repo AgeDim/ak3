@@ -245,7 +245,7 @@ log: |
   DEBUG    root:machine.py:239 {TICK: 37, ACC: 119, IR: 0, OR: 0, IP: 37}
   INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' '] << 'w'
   DEBUG    root:machine.py:239 {TICK: 38, ACC: 119, IR: 0, OR: 0, IP: 38}
-  DEBUG    root:machine.py:239 {TICK: 38, ACC: 111, IR: 0, OR: 0, IP: 38}
+  DEBUG    root:machine.py:239 {TICK: 39, ACC: 111, IR: 0, OR: 0, IP: 39}
   INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w'] << 'o'
   DEBUG    root:machine.py:239 {TICK: 40, ACC: 111, IR: 0, OR: 0, IP: 40}
   DEBUG    root:machine.py:239 {TICK: 41, ACC: 114, IR: 0, OR: 0, IP: 41}
@@ -260,6 +260,6 @@ log: |
   DEBUG    root:machine.py:239 {TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47}
   INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
   DEBUG    root:machine.py:239 {TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48}
-  INFO     root:machine.py:266 output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
+  INFO     root:machine.py:265 output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
 output: |
   Output buffer: Hello world! | ticks: 49 | amount_instr: 49
