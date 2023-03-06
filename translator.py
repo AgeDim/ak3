@@ -1,7 +1,7 @@
 import re
 import sys
 
-from src.isa import Opcode, write_code
+from isa import Opcode, write_code
 
 type2opcode = {
     "st": Opcode.ST,
@@ -78,7 +78,6 @@ def translate(filename):
     global address_instr_mem, stack
     code = parse(filename)
     for i in range(0, len(code)):
-        reser = address_instr_mem
         if re.fullmatch(regex_patterns.get("ld"), code[i]) is not None:
             parse_ld_instr(code[i])
 

@@ -1,7 +1,7 @@
 import logging
 import re
 import sys
-from src.isa import Opcode, read_code
+from isa import Opcode, read_code
 
 
 class DataPath:
@@ -18,9 +18,6 @@ class DataPath:
             'ir': 0,  # input register
             'or': 0,  # output register
             'ip': 0,  # instruction pointer
-            'dp': 0,  # data pointer
-            'dr': 0,  # data register
-
         }
 
     def set_flags(self, acc):
@@ -34,7 +31,6 @@ class DataPath:
         self.neg_flag = False
 
     def output(self, string_mode):
-        ch = 0
         if string_mode == 1:
             ch = chr(self.acc)
         else:
@@ -42,8 +38,13 @@ class DataPath:
         logging.info('output: %s << %s', repr(self.output_buffer), repr(ch))
         self.output_buffer.append(ch)
 
-    def write(self, addr):
+    def input(self, addr):
         self.data_mem[addr] = self.acc
+
+    def print(self):
+        if len(self.input_buffer) == 0:
+            raise EOFError()
+        self.acc = ord(self.input_buffer.pop(0))
 
     def latch_program_counter(self, sel_next):
         if sel_next:
@@ -55,14 +56,6 @@ class DataPath:
 
     def latch_register(self, reg):
         self.registers[reg] = self.val_to_ld
-
-    def latch_data_mem_counter(self, sel_next):
-        if sel_next:
-            self.registers['dp'] += 1
-        else:
-            self.registers['dp'] = self.val_to_ld
-
-        assert self.registers['dp'] < len(self.instr_mem), "Out of data memory: {}".format(self.registers['dp'])
 
 
 class ALU:
@@ -109,12 +102,13 @@ class ControlUnit:
         self._tick = 0
 
     def __repr__(self):
-        return "{{TICK: {}, ACC: {}, IR: {}, OR: {}, IP: {}, DP: {}, DR: {}}}".format(self._tick,self.data_path.acc,
-                    self.data_path.registers.get("ir"),
-                    self.data_path.registers.get("or"),
-                    self.data_path.registers.get("ip"),
-                    self.data_path.registers.get("dp"),
-                    self.data_path.registers.get("dr"))
+        return "{{TICK: {}, ACC: {}, IR: {}, OR: {}, IP: {}}}".format(self._tick, self.data_path.acc,
+                                                                                      self.data_path.registers.get(
+                                                                                          "ir"),
+                                                                                      self.data_path.registers.get(
+                                                                                          "or"),
+                                                                                      self.data_path.registers.get(
+                                                                                          "ip"))
 
     def tick(self):
         self._tick += 1
@@ -144,7 +138,7 @@ class ControlUnit:
                 self.data_path.acc = cur_instr['arg1']
 
         if opcode is Opcode.ST:
-            self.data_path.write(int(cur_instr['arg1'].split("x")[1]))
+            self.data_path.input(int(cur_instr['arg1'].split("x")[1]))
             self.tick()
 
         if opcode is Opcode.JUMP:
@@ -220,8 +214,7 @@ class ControlUnit:
 
         if opcode is Opcode.INPUT:
             self.tick()
-            self.data_path.input()
-            self.data_path.latch_data_mem_counter(True)
+            self.data_path.print()
         self.data_path.drop_flags()
         if not jmp_instr:
             self.data_path.latch_program_counter(True)

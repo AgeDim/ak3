@@ -1,0 +1,197 @@
+[
+    {
+        "opcode": "ld",
+        "arg1": 72
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 101
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x1"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 108
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x2"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 108
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x3"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 111
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x4"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 32
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x5"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 119
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x6"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 111
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x7"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 114
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x8"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 108
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x9"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 100
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x10"
+    },
+    {
+        "opcode": "ld",
+        "arg1": 33
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x11"
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x1"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x2"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x3"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x4"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x5"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x6"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x7"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x8"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x9"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x10"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x11"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "halt"
+    }
+]
