@@ -200,66 +200,66 @@ code: |-
       }
   ]
 log: |
-  DEBUG    root:machine.py:240 {TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1}
-  DEBUG    root:machine.py:240 {TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2}
-  DEBUG    root:machine.py:240 {TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3}
-  DEBUG    root:machine.py:240 {TICK: 4, ACC: 101, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:240 {TICK: 5, ACC: 108, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:240 {TICK: 6, ACC: 108, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:240 {TICK: 7, ACC: 108, IR: 0, OR: 0, IP: 7}
-  DEBUG    root:machine.py:240 {TICK: 8, ACC: 108, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:240 {TICK: 9, ACC: 111, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:240 {TICK: 10, ACC: 111, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:240 {TICK: 11, ACC: 32, IR: 0, OR: 0, IP: 11}
-  DEBUG    root:machine.py:240 {TICK: 12, ACC: 32, IR: 0, OR: 0, IP: 12}
-  DEBUG    root:machine.py:240 {TICK: 13, ACC: 119, IR: 0, OR: 0, IP: 13}
-  DEBUG    root:machine.py:240 {TICK: 14, ACC: 119, IR: 0, OR: 0, IP: 14}
-  DEBUG    root:machine.py:240 {TICK: 15, ACC: 111, IR: 0, OR: 0, IP: 15}
-  DEBUG    root:machine.py:240 {TICK: 16, ACC: 111, IR: 0, OR: 0, IP: 16}
-  DEBUG    root:machine.py:240 {TICK: 17, ACC: 114, IR: 0, OR: 0, IP: 17}
-  DEBUG    root:machine.py:240 {TICK: 18, ACC: 114, IR: 0, OR: 0, IP: 18}
-  DEBUG    root:machine.py:240 {TICK: 19, ACC: 108, IR: 0, OR: 0, IP: 19}
-  DEBUG    root:machine.py:240 {TICK: 20, ACC: 108, IR: 0, OR: 0, IP: 20}
-  DEBUG    root:machine.py:240 {TICK: 21, ACC: 100, IR: 0, OR: 0, IP: 21}
-  DEBUG    root:machine.py:240 {TICK: 22, ACC: 100, IR: 0, OR: 0, IP: 22}
-  DEBUG    root:machine.py:240 {TICK: 23, ACC: 33, IR: 0, OR: 0, IP: 23}
-  DEBUG    root:machine.py:240 {TICK: 24, ACC: 33, IR: 0, OR: 0, IP: 24}
-  DEBUG    root:machine.py:240 {TICK: 25, ACC: 72, IR: 0, OR: 0, IP: 25}
-  INFO     root:machine.py:39 output: [] << 'H'
-  DEBUG    root:machine.py:240 {TICK: 26, ACC: 72, IR: 0, OR: 0, IP: 26}
-  DEBUG    root:machine.py:240 {TICK: 27, ACC: 101, IR: 0, OR: 0, IP: 27}
-  INFO     root:machine.py:39 output: ['H'] << 'e'
-  DEBUG    root:machine.py:240 {TICK: 28, ACC: 101, IR: 0, OR: 0, IP: 28}
-  DEBUG    root:machine.py:240 {TICK: 29, ACC: 108, IR: 0, OR: 0, IP: 29}
-  INFO     root:machine.py:39 output: ['H', 'e'] << 'l'
-  DEBUG    root:machine.py:240 {TICK: 30, ACC: 108, IR: 0, OR: 0, IP: 30}
-  DEBUG    root:machine.py:240 {TICK: 31, ACC: 108, IR: 0, OR: 0, IP: 31}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l'] << 'l'
-  DEBUG    root:machine.py:240 {TICK: 32, ACC: 108, IR: 0, OR: 0, IP: 32}
-  DEBUG    root:machine.py:240 {TICK: 33, ACC: 111, IR: 0, OR: 0, IP: 33}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l'] << 'o'
-  DEBUG    root:machine.py:240 {TICK: 34, ACC: 111, IR: 0, OR: 0, IP: 34}
-  DEBUG    root:machine.py:240 {TICK: 35, ACC: 32, IR: 0, OR: 0, IP: 35}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o'] << ' '
-  DEBUG    root:machine.py:240 {TICK: 36, ACC: 32, IR: 0, OR: 0, IP: 36}
-  DEBUG    root:machine.py:240 {TICK: 37, ACC: 119, IR: 0, OR: 0, IP: 37}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' '] << 'w'
-  DEBUG    root:machine.py:240 {TICK: 38, ACC: 119, IR: 0, OR: 0, IP: 38}
-  DEBUG    root:machine.py:240 {TICK: 39, ACC: 111, IR: 0, OR: 0, IP: 39}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w'] << 'o'
-  DEBUG    root:machine.py:240 {TICK: 40, ACC: 111, IR: 0, OR: 0, IP: 40}
-  DEBUG    root:machine.py:240 {TICK: 41, ACC: 114, IR: 0, OR: 0, IP: 41}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o'] << 'r'
-  DEBUG    root:machine.py:240 {TICK: 42, ACC: 114, IR: 0, OR: 0, IP: 42}
-  DEBUG    root:machine.py:240 {TICK: 43, ACC: 108, IR: 0, OR: 0, IP: 43}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r'] << 'l'
-  DEBUG    root:machine.py:240 {TICK: 44, ACC: 108, IR: 0, OR: 0, IP: 44}
-  DEBUG    root:machine.py:240 {TICK: 45, ACC: 100, IR: 0, OR: 0, IP: 45}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l'] << 'd'
-  DEBUG    root:machine.py:240 {TICK: 46, ACC: 100, IR: 0, OR: 0, IP: 46}
-  DEBUG    root:machine.py:240 {TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47}
-  INFO     root:machine.py:39 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
-  DEBUG    root:machine.py:240 {TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48}
+  DEBUG    root:machine.py:238 {TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1}
+  DEBUG    root:machine.py:238 {TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2}
+  DEBUG    root:machine.py:238 {TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3}
+  DEBUG    root:machine.py:238 {TICK: 4, ACC: 101, IR: 0, OR: 0, IP: 4}
+  DEBUG    root:machine.py:238 {TICK: 5, ACC: 108, IR: 0, OR: 0, IP: 5}
+  DEBUG    root:machine.py:238 {TICK: 6, ACC: 108, IR: 0, OR: 0, IP: 6}
+  DEBUG    root:machine.py:238 {TICK: 7, ACC: 108, IR: 0, OR: 0, IP: 7}
+  DEBUG    root:machine.py:238 {TICK: 8, ACC: 108, IR: 0, OR: 0, IP: 8}
+  DEBUG    root:machine.py:238 {TICK: 9, ACC: 111, IR: 0, OR: 0, IP: 9}
+  DEBUG    root:machine.py:238 {TICK: 10, ACC: 111, IR: 0, OR: 0, IP: 10}
+  DEBUG    root:machine.py:238 {TICK: 11, ACC: 32, IR: 0, OR: 0, IP: 11}
+  DEBUG    root:machine.py:238 {TICK: 12, ACC: 32, IR: 0, OR: 0, IP: 12}
+  DEBUG    root:machine.py:238 {TICK: 13, ACC: 119, IR: 0, OR: 0, IP: 13}
+  DEBUG    root:machine.py:238 {TICK: 14, ACC: 119, IR: 0, OR: 0, IP: 14}
+  DEBUG    root:machine.py:238 {TICK: 15, ACC: 111, IR: 0, OR: 0, IP: 15}
+  DEBUG    root:machine.py:238 {TICK: 16, ACC: 111, IR: 0, OR: 0, IP: 16}
+  DEBUG    root:machine.py:238 {TICK: 17, ACC: 114, IR: 0, OR: 0, IP: 17}
+  DEBUG    root:machine.py:238 {TICK: 18, ACC: 114, IR: 0, OR: 0, IP: 18}
+  DEBUG    root:machine.py:238 {TICK: 19, ACC: 108, IR: 0, OR: 0, IP: 19}
+  DEBUG    root:machine.py:238 {TICK: 20, ACC: 108, IR: 0, OR: 0, IP: 20}
+  DEBUG    root:machine.py:238 {TICK: 21, ACC: 100, IR: 0, OR: 0, IP: 21}
+  DEBUG    root:machine.py:238 {TICK: 22, ACC: 100, IR: 0, OR: 0, IP: 22}
+  DEBUG    root:machine.py:238 {TICK: 23, ACC: 33, IR: 0, OR: 0, IP: 23}
+  DEBUG    root:machine.py:238 {TICK: 24, ACC: 33, IR: 0, OR: 0, IP: 24}
+  DEBUG    root:machine.py:238 {TICK: 25, ACC: 72, IR: 0, OR: 0, IP: 25}
+  INFO     root:machine.py:38 output: [] << 'H'
+  DEBUG    root:machine.py:238 {TICK: 26, ACC: 72, IR: 0, OR: 0, IP: 26}
+  DEBUG    root:machine.py:238 {TICK: 27, ACC: 101, IR: 0, OR: 0, IP: 27}
+  INFO     root:machine.py:38 output: ['H'] << 'e'
+  DEBUG    root:machine.py:238 {TICK: 28, ACC: 101, IR: 0, OR: 0, IP: 28}
+  DEBUG    root:machine.py:238 {TICK: 29, ACC: 108, IR: 0, OR: 0, IP: 29}
+  INFO     root:machine.py:38 output: ['H', 'e'] << 'l'
+  DEBUG    root:machine.py:238 {TICK: 30, ACC: 108, IR: 0, OR: 0, IP: 30}
+  DEBUG    root:machine.py:238 {TICK: 31, ACC: 108, IR: 0, OR: 0, IP: 31}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l'] << 'l'
+  DEBUG    root:machine.py:238 {TICK: 32, ACC: 108, IR: 0, OR: 0, IP: 32}
+  DEBUG    root:machine.py:238 {TICK: 33, ACC: 111, IR: 0, OR: 0, IP: 33}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l'] << 'o'
+  DEBUG    root:machine.py:238 {TICK: 34, ACC: 111, IR: 0, OR: 0, IP: 34}
+  DEBUG    root:machine.py:238 {TICK: 35, ACC: 32, IR: 0, OR: 0, IP: 35}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o'] << ' '
+  DEBUG    root:machine.py:238 {TICK: 36, ACC: 32, IR: 0, OR: 0, IP: 36}
+  DEBUG    root:machine.py:238 {TICK: 37, ACC: 119, IR: 0, OR: 0, IP: 37}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' '] << 'w'
+  DEBUG    root:machine.py:238 {TICK: 38, ACC: 119, IR: 0, OR: 0, IP: 38}
+  DEBUG    root:machine.py:238 {TICK: 38, ACC: 111, IR: 0, OR: 0, IP: 38}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w'] << 'o'
+  DEBUG    root:machine.py:238 {TICK: 40, ACC: 111, IR: 0, OR: 0, IP: 40}
+  DEBUG    root:machine.py:238 {TICK: 41, ACC: 114, IR: 0, OR: 0, IP: 41}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o'] << 'r'
+  DEBUG    root:machine.py:238 {TICK: 42, ACC: 114, IR: 0, OR: 0, IP: 42}
+  DEBUG    root:machine.py:238 {TICK: 43, ACC: 108, IR: 0, OR: 0, IP: 43}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r'] << 'l'
+  DEBUG    root:machine.py:238 {TICK: 44, ACC: 108, IR: 0, OR: 0, IP: 44}
+  DEBUG    root:machine.py:238 {TICK: 45, ACC: 100, IR: 0, OR: 0, IP: 45}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l'] << 'd'
+  DEBUG    root:machine.py:238 {TICK: 46, ACC: 100, IR: 0, OR: 0, IP: 46}
+  DEBUG    root:machine.py:238 {TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47}
+  INFO     root:machine.py:38 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
+  DEBUG    root:machine.py:238 {TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48}
   INFO     root:machine.py:266 output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
 output: |
   Output buffer: Hello world! | ticks: 49 | amount_instr: 49
