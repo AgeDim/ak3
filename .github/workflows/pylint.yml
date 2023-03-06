@@ -22,6 +22,6 @@ jobs:
         pip install pytest-golden
     - name: Run golden tests
       run: |
-        pytest integration_tests.py::test_hello_program
-        pytest integration_tests.py::test_cat_program
-        pytest integration_tests.py::test_prob5_program
+        pytest tests.py::test_hello_program
+        pytest tests.py::test_cat_program
+        pytest tests.py::test_prob5_program
