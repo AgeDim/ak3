@@ -199,7 +199,7 @@ code: |-
           "opcode": "halt"
       }
   ]
-log: |-
+log: |
   DEBUG    root:machine.py:242 {TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 72}, DR: 72}
   DEBUG    root:machine.py:242 {TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 72}
   DEBUG    root:machine.py:242 {TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 101}, DR: 101}
