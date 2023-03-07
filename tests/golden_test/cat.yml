@@ -58,129 +58,129 @@ code: |-
       }
   ]
 log: |
-  DEBUG    root:machine.py:239 {TICK: 1, ACC: 0, IR: 0, OR: 0, IP: 1}
-  DEBUG    root:machine.py:239 {TICK: 2, ACC: 0, IR: 0, OR: 0, IP: 2}
-  DEBUG    root:machine.py:239 {TICK: 3, ACC: 99, IR: 0, OR: 0, IP: 3}
-  DEBUG    root:machine.py:239 {TICK: 4, ACC: 99, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 5, ACC: 99, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 6, ACC: 99, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 7, ACC: 99, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: [] << 'c'
-  DEBUG    root:machine.py:239 {TICK: 8, ACC: 99, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 9, ACC: 97, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 10, ACC: 97, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 11, ACC: 97, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 12, ACC: 97, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 13, ACC: 97, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 14, ACC: 97, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c'] << 'a'
-  DEBUG    root:machine.py:239 {TICK: 15, ACC: 97, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 16, ACC: 116, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 17, ACC: 116, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 18, ACC: 116, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 19, ACC: 116, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 20, ACC: 116, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 21, ACC: 116, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a'] << 't'
-  DEBUG    root:machine.py:239 {TICK: 22, ACC: 116, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 23, ACC: 32, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 24, ACC: 32, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 25, ACC: 32, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 26, ACC: 32, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 27, ACC: 32, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 28, ACC: 32, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't'] << ' '
-  DEBUG    root:machine.py:239 {TICK: 29, ACC: 32, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 30, ACC: 116, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 31, ACC: 116, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 32, ACC: 116, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 33, ACC: 116, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 34, ACC: 116, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 35, ACC: 116, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' '] << 't'
-  DEBUG    root:machine.py:239 {TICK: 36, ACC: 116, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 37, ACC: 101, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 38, ACC: 101, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 39, ACC: 101, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 40, ACC: 101, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 41, ACC: 101, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 42, ACC: 101, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't'] << 'e'
-  DEBUG    root:machine.py:239 {TICK: 43, ACC: 101, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 44, ACC: 115, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 45, ACC: 115, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 46, ACC: 115, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 47, ACC: 115, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 48, ACC: 115, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 49, ACC: 115, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e'] << 's'
-  DEBUG    root:machine.py:239 {TICK: 50, ACC: 115, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 51, ACC: 116, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 52, ACC: 116, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 53, ACC: 116, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 54, ACC: 116, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 55, ACC: 116, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 56, ACC: 116, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's'] << 't'
-  DEBUG    root:machine.py:239 {TICK: 57, ACC: 116, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 58, ACC: 32, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 59, ACC: 32, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 60, ACC: 32, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 61, ACC: 32, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 62, ACC: 32, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 63, ACC: 32, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't'] << ' '
-  DEBUG    root:machine.py:239 {TICK: 64, ACC: 32, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 65, ACC: 112, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 66, ACC: 112, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 67, ACC: 112, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 68, ACC: 112, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 69, ACC: 112, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 70, ACC: 112, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' '] << 'p'
-  DEBUG    root:machine.py:239 {TICK: 71, ACC: 112, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 72, ACC: 114, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 73, ACC: 114, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 74, ACC: 114, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 75, ACC: 114, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 76, ACC: 114, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 77, ACC: 114, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p'] << 'r'
-  DEBUG    root:machine.py:239 {TICK: 78, ACC: 114, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 79, ACC: 105, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 80, ACC: 105, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 81, ACC: 105, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 82, ACC: 105, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 83, ACC: 105, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 84, ACC: 105, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r'] << 'i'
-  DEBUG    root:machine.py:239 {TICK: 85, ACC: 105, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 86, ACC: 118, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 87, ACC: 118, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 88, ACC: 118, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 89, ACC: 118, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 90, ACC: 118, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 91, ACC: 118, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i'] << 'v'
-  DEBUG    root:machine.py:239 {TICK: 92, ACC: 118, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 93, ACC: 101, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 94, ACC: 101, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 95, ACC: 101, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 96, ACC: 101, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 97, ACC: 101, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 98, ACC: 101, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v'] << 'e'
-  DEBUG    root:machine.py:239 {TICK: 99, ACC: 101, IR: 0, OR: 0, IP: 8}
-  DEBUG    root:machine.py:239 {TICK: 100, ACC: 116, IR: 0, OR: 0, IP: 9}
-  DEBUG    root:machine.py:239 {TICK: 101, ACC: 116, IR: 0, OR: 0, IP: 10}
-  DEBUG    root:machine.py:239 {TICK: 102, ACC: 116, IR: 0, OR: 0, IP: 4}
-  DEBUG    root:machine.py:239 {TICK: 103, ACC: 116, IR: 0, OR: 0, IP: 5}
-  DEBUG    root:machine.py:239 {TICK: 104, ACC: 116, IR: 0, OR: 0, IP: 6}
-  DEBUG    root:machine.py:239 {TICK: 105, ACC: 116, IR: 0, OR: 0, IP: 7}
-  INFO     root:machine.py:38 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e'] << 't'
-  DEBUG    root:machine.py:239 {TICK: 106, ACC: 116, IR: 0, OR: 0, IP: 8}
-  INFO     root:machine.py:241 Input buffer is empty!
-  INFO     root:machine.py:265 output:  ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e', 't'], ticks: 107
+  DEBUG:root:{TICK: 1, ACC: 0, IR: 0, OR: 0, IP: 1, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 0}, DR: 0}
+  DEBUG:root:{TICK: 2, ACC: 0, IR: 0, OR: 0, IP: 2, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 0}
+  DEBUG:root:{TICK: 3, ACC: 99, IR: 0, OR: 0, IP: 3, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 0}
+  DEBUG:root:{TICK: 4, ACC: 99, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 0}
+  DEBUG:root:{TICK: 5, ACC: 99, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 99}
+  DEBUG:root:{TICK: 6, ACC: 99, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 7, ACC: 99, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 99}
+  INFO:root:output: [] << 'c'
+  DEBUG:root:{TICK: 8, ACC: 99, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 9, ACC: 97, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 10, ACC: 97, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 11, ACC: 97, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 12, ACC: 97, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 97}
+  DEBUG:root:{TICK: 13, ACC: 97, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 14, ACC: 97, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 97}
+  INFO:root:output: ['c'] << 'a'
+  DEBUG:root:{TICK: 15, ACC: 97, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 16, ACC: 116, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 17, ACC: 116, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 18, ACC: 116, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 19, ACC: 116, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  DEBUG:root:{TICK: 20, ACC: 116, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 21, ACC: 116, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  INFO:root:output: ['c', 'a'] << 't'
+  DEBUG:root:{TICK: 22, ACC: 116, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 23, ACC: 32, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 24, ACC: 32, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 25, ACC: 32, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 26, ACC: 32, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 32}
+  DEBUG:root:{TICK: 27, ACC: 32, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 28, ACC: 32, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 32}
+  INFO:root:output: ['c', 'a', 't'] << ' '
+  DEBUG:root:{TICK: 29, ACC: 32, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 30, ACC: 116, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 31, ACC: 116, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 32, ACC: 116, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 33, ACC: 116, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  DEBUG:root:{TICK: 34, ACC: 116, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 35, ACC: 116, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  INFO:root:output: ['c', 'a', 't', ' '] << 't'
+  DEBUG:root:{TICK: 36, ACC: 116, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 37, ACC: 101, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 38, ACC: 101, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 39, ACC: 101, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 40, ACC: 101, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 101}
+  DEBUG:root:{TICK: 41, ACC: 101, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 42, ACC: 101, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 101}
+  INFO:root:output: ['c', 'a', 't', ' ', 't'] << 'e'
+  DEBUG:root:{TICK: 43, ACC: 101, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 44, ACC: 115, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 45, ACC: 115, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 46, ACC: 115, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 47, ACC: 115, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 115}
+  DEBUG:root:{TICK: 48, ACC: 115, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 49, ACC: 115, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 115}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e'] << 's'
+  DEBUG:root:{TICK: 50, ACC: 115, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 51, ACC: 116, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 52, ACC: 116, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 53, ACC: 116, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 54, ACC: 116, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  DEBUG:root:{TICK: 55, ACC: 116, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 56, ACC: 116, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's'] << 't'
+  DEBUG:root:{TICK: 57, ACC: 116, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 58, ACC: 32, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 59, ACC: 32, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 60, ACC: 32, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 61, ACC: 32, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 32}
+  DEBUG:root:{TICK: 62, ACC: 32, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 63, ACC: 32, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 32}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't'] << ' '
+  DEBUG:root:{TICK: 64, ACC: 32, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 65, ACC: 112, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 66, ACC: 112, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 67, ACC: 112, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 68, ACC: 112, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 112}
+  DEBUG:root:{TICK: 69, ACC: 112, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 70, ACC: 112, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 112}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' '] << 'p'
+  DEBUG:root:{TICK: 71, ACC: 112, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 72, ACC: 114, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 73, ACC: 114, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 74, ACC: 114, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 75, ACC: 114, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 114}
+  DEBUG:root:{TICK: 76, ACC: 114, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 77, ACC: 114, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 114}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p'] << 'r'
+  DEBUG:root:{TICK: 78, ACC: 114, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 79, ACC: 105, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 80, ACC: 105, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 81, ACC: 105, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 82, ACC: 105, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 105}
+  DEBUG:root:{TICK: 83, ACC: 105, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 84, ACC: 105, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 105}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r'] << 'i'
+  DEBUG:root:{TICK: 85, ACC: 105, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 86, ACC: 118, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 87, ACC: 118, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 88, ACC: 118, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 89, ACC: 118, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 118}
+  DEBUG:root:{TICK: 90, ACC: 118, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 91, ACC: 118, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 118}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i'] << 'v'
+  DEBUG:root:{TICK: 92, ACC: 118, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 93, ACC: 101, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 94, ACC: 101, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 95, ACC: 101, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 96, ACC: 101, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 101}
+  DEBUG:root:{TICK: 97, ACC: 101, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 98, ACC: 101, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 101}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v'] << 'e'
+  DEBUG:root:{TICK: 99, ACC: 101, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG:root:{TICK: 100, ACC: 116, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.INPUT: 'input'>}, DR: 1}
+  DEBUG:root:{TICK: 101, ACC: 116, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 1}
+  DEBUG:root:{TICK: 102, ACC: 116, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.JUMP: 'jmp'>, 'arg2': 5}, DR: 1}
+  DEBUG:root:{TICK: 103, ACC: 116, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  DEBUG:root:{TICK: 104, ACC: 116, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.JE: 'je'>, 'arg1': '0', 'arg2': 12}, DR: 0}
+  DEBUG:root:{TICK: 105, ACC: 116, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
+  INFO:root:output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e'] << 't'
+  DEBUG:root:{TICK: 106, ACC: 116, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  INFO:root:Input buffer is empty!
+  INFO:root:output:  ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e', 't'], ticks: 107
 
 output: |
   Output buffer: cat test privet | ticks: 107 | amount_instr: 106

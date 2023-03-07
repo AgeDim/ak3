@@ -18,6 +18,8 @@ class DataPath:
             'ir': 0,  # input register
             'or': 0,  # output register
             'ip': 0,  # instruction pointer
+            'dr': 0,  # data register
+            'cr': 0   # command register
         }
 
     def set_flags(self, acc):
@@ -102,13 +104,15 @@ class ControlUnit:
         self._tick = 0
 
     def __repr__(self):
-        return "{{TICK: {}, ACC: {}, IR: {}, OR: {}, IP: {}}}".format(self._tick, self.data_path.acc,
+        return "{{TICK: {}, ACC: {}, IR: {}, OR: {}, IP: {}, CR: {}, DR: {}}}".format(self._tick, self.data_path.acc,
                                                                                       self.data_path.registers.get(
                                                                                           "ir"),
                                                                                       self.data_path.registers.get(
                                                                                           "or"),
                                                                                       self.data_path.registers.get(
-                                                                                          "ip"))
+                                                                                          "ip"),self.data_path.registers.get(
+                                                                                          "cr"),self.data_path.registers.get(
+                                                                                          "dr"))
 
     def tick(self):
         self._tick += 1
@@ -121,9 +125,17 @@ class ControlUnit:
             self.data_path.instr_mem[i] = self.program[i]
 
     def decode_and_execute_instruction(self):
-        cur_instr = self.data_path.instr_mem[self.data_path.registers.get('ip')]
-        opcode = cur_instr['opcode']
+        self.data_path.registers['cr'] = self.data_path.instr_mem[self.data_path.registers.get('ip')]
+        command = self.data_path.registers.get('cr')
+        opcode = command['opcode']
         jmp_instr = False
+        if opcode in {Opcode.LD, Opcode.ADD, Opcode.SUB, Opcode.MUL, Opcode.MOD, Opcode.DIV,Opcode.JLE, Opcode.JL, Opcode.JNE, Opcode.JE, Opcode.JG, Opcode.JGE, Opcode.PRINT}:
+            if re.match(r'0x\d*', str(command['arg1'])) is not None:
+                temp = int(command['arg1'].split("x")[1])
+                self.data_path.registers['dr'] = self.data_path.data_mem[temp]
+            else:
+                self.data_path.registers['dr'] = command['arg1']
+
 
         if opcode is Opcode.HALT:
             self.tick()
@@ -131,18 +143,14 @@ class ControlUnit:
 
         if opcode is Opcode.LD:
             self.tick()
-            if re.match(r'0x\d*', str(cur_instr['arg1'])) is not None:
-                temp = int(cur_instr['arg1'].split("x")[1])
-                self.data_path.acc = self.data_path.data_mem[temp]
-            else:
-                self.data_path.acc = cur_instr['arg1']
+            self.data_path.acc = self.data_path.registers.get('dr')
 
         if opcode is Opcode.ST:
-            self.data_path.input(int(cur_instr['arg1'].split("x")[1]))
+            self.data_path.input(int(command['arg1'].split("x")[1]))
             self.tick()
 
         if opcode is Opcode.JUMP:
-            self.data_path.val_to_ld = cur_instr['arg2'] - 1
+            self.data_path.val_to_ld = command['arg2'] - 1
             self.data_path.latch_program_counter(False)
             self.tick()
             jmp_instr = True
@@ -156,27 +164,22 @@ class ControlUnit:
 
         if opcode in {Opcode.ADD, Opcode.SUB, Opcode.MUL, Opcode.MOD, Opcode.DIV}:
             self.tick()
-            if re.match(r'0x\d*', str(cur_instr['arg1'])) is not None:
-                temp = self.data_path.data_mem[int(cur_instr['arg1'].split("x")[1])]
-            else:
-                temp = cur_instr['arg1']
             if opcode is Opcode.ADD:
-                self.data_path.acc = self.alu.add(self.data_path.acc, temp)
+                self.data_path.acc = self.alu.add(self.data_path.acc, self.data_path.registers.get('dr'))
             if opcode is Opcode.SUB:
-                self.data_path.acc = self.alu.sub(self.data_path.acc, temp)
+                self.data_path.acc = self.alu.sub(self.data_path.acc, self.data_path.registers.get('dr'))
             if opcode is Opcode.MUL:
-                self.data_path.acc = self.alu.mul(self.data_path.acc, temp)
+                self.data_path.acc = self.alu.mul(self.data_path.acc, self.data_path.registers.get('dr'))
             if opcode is Opcode.MOD:
-                self.data_path.acc = self.alu.mod(self.data_path.acc, temp)
+                self.data_path.acc = self.alu.mod(self.data_path.acc, self.data_path.registers.get('dr'))
             if opcode is Opcode.DIV:
-                self.data_path.acc = self.alu.div(self.data_path.acc, temp)
+                self.data_path.acc = self.alu.div(self.data_path.acc, self.data_path.registers.get('dr'))
 
         # посмотреть прыги
         if opcode in {Opcode.JLE, Opcode.JL, Opcode.JNE, Opcode.JE, Opcode.JG, Opcode.JGE}:
             self.tick()
-            arg1 = cur_instr['arg1']
-            self.data_path.acc = self.alu.sub(self.data_path.acc, arg1)
-            self.data_path.val_to_ld = cur_instr['arg2'] - 1
+            self.data_path.acc = self.alu.sub(self.data_path.acc, self.data_path.registers.get('dr'))
+            self.data_path.val_to_ld = command['arg2'] - 1
 
             if opcode is Opcode.JLE:
                 if self.data_path.zero_flag or self.data_path.neg_flag:
@@ -210,7 +213,7 @@ class ControlUnit:
 
         if opcode is Opcode.PRINT:
             self.tick()
-            self.data_path.output(cur_instr['arg1'])
+            self.data_path.output(self.data_path.registers.get('dr'))
 
         if opcode is Opcode.INPUT:
             self.tick()
