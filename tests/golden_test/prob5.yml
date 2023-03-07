@@ -1,0 +1,121 @@
+source: |-
+  let n = 2520;
+  let i = 20;
+  while (i > 0)
+  {
+  if (n % i == 0)
+  {
+  i = i - 1;
+  }
+  else
+  {
+  n = n + 2520;
+  i = 20;
+  }
+  if (i == 1)
+  {
+  print(n);
+  }
+  }
+code: |-
+  [
+      {
+          "opcode": "ld",
+          "arg1": 2520
+      },
+      {
+          "opcode": "st",
+          "arg1": "0x0"
+      },
+      {
+          "opcode": "ld",
+          "arg1": 20
+      },
+      {
+          "opcode": "st",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "jle",
+          "arg1": 0,
+          "arg2": 24
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x0"
+      },
+      {
+          "opcode": "mod",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "jne",
+          "arg1": 0,
+          "arg2": 14
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "dec"
+      },
+      {
+          "opcode": "st",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "jmp",
+          "arg2": 19
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x0"
+      },
+      {
+          "opcode": "add",
+          "arg1": "2520"
+      },
+      {
+          "opcode": "st",
+          "arg1": "0x0"
+      },
+      {
+          "opcode": "ld",
+          "arg1": "20"
+      },
+      {
+          "opcode": "st",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x1"
+      },
+      {
+          "opcode": "jne",
+          "arg1": 1,
+          "arg2": 23
+      },
+      {
+          "opcode": "ld",
+          "arg1": "0x0"
+      },
+      {
+          "opcode": "print",
+          "arg1": 0
+      },
+      {
+          "opcode": "jmp",
+          "arg2": 5
+      },
+      {
+          "opcode": "halt"
+      }
+  ]
+output: |
+  Output buffer: 232792560 | ticks: 2435110 | amount_instr: 2435110
