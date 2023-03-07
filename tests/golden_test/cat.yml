@@ -179,7 +179,7 @@ log: |
   DEBUG    root:machine.py:242 {TICK: 105, ACC: 116, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 116}
   INFO     root:machine.py:40 output: ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e'] << 't'
   DEBUG    root:machine.py:242 {TICK: 106, ACC: 116, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  INFO     root:machine.py:242 Input buffer is empty!
+  INFO     root:machine.py:244 Input buffer is empty!
   INFO     root:machine.py:268 output:  ['c', 'a', 't', ' ', 't', 'e', 's', 't', ' ', 'p', 'r', 'i', 'v', 'e', 't'], ticks: 107
 
 output: |
