@@ -199,7 +199,7 @@ code: |-
           "opcode": "halt"
       }
   ]
-log: |
+log: |-
   DEBUG    root:machine.py:242 {TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 72}, DR: 72}
   DEBUG    root:machine.py:242 {TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 72}
   DEBUG    root:machine.py:242 {TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 101}, DR: 101}
@@ -259,7 +259,7 @@ log: |
   DEBUG    root:machine.py:242 {TICK: 46, ACC: 100, IR: 0, OR: 0, IP: 46, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
   DEBUG    root:machine.py:242 {TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x11'}, DR: 33}
   INFO     root:machine.py:40 output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
-  DEBUG    root:machine.py:242 {TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}                                                                    
+  DEBUG    root:machine.py:242 {TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
   INFO     root:machine.py:268 output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
 
 output: |
