@@ -1,0 +1,48 @@
+[
+    {
+        "opcode": "ld",
+        "arg1": 0
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "input"
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "je",
+        "arg1": "0",
+        "arg2": 12
+    },
+    {
+        "opcode": "ld",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "print",
+        "arg1": 1
+    },
+    {
+        "opcode": "input"
+    },
+    {
+        "opcode": "st",
+        "arg1": "0x0"
+    },
+    {
+        "opcode": "jmp",
+        "arg2": 5
+    },
+    {
+        "opcode": "halt"
+    }
+]
