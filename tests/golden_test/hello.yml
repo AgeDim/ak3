@@ -200,67 +200,67 @@ code: |-
       }
   ]
 log: |
- DEBUG:root:{TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 72}, DR: 72}
-  DEBUG:root:{TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 72}
-  DEBUG:root:{TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 101}, DR: 101}
-  DEBUG:root:{TICK: 4, ACC: 101, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x1'}, DR: 101}
-  DEBUG:root:{TICK: 5, ACC: 108, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
-  DEBUG:root:{TICK: 6, ACC: 108, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x2'}, DR: 108}
-  DEBUG:root:{TICK: 7, ACC: 108, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
-  DEBUG:root:{TICK: 8, ACC: 108, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x3'}, DR: 108}
-  DEBUG:root:{TICK: 9, ACC: 111, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 111}, DR: 111}
-  DEBUG:root:{TICK: 10, ACC: 111, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x4'}, DR: 111}
-  DEBUG:root:{TICK: 11, ACC: 32, IR: 0, OR: 0, IP: 11, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 32}, DR: 32}
-  DEBUG:root:{TICK: 12, ACC: 32, IR: 0, OR: 0, IP: 12, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x5'}, DR: 32}
-  DEBUG:root:{TICK: 13, ACC: 119, IR: 0, OR: 0, IP: 13, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 119}, DR: 119}
-  DEBUG:root:{TICK: 14, ACC: 119, IR: 0, OR: 0, IP: 14, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x6'}, DR: 119}
-  DEBUG:root:{TICK: 15, ACC: 111, IR: 0, OR: 0, IP: 15, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 111}, DR: 111}
-  DEBUG:root:{TICK: 16, ACC: 111, IR: 0, OR: 0, IP: 16, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x7'}, DR: 111}
-  DEBUG:root:{TICK: 17, ACC: 114, IR: 0, OR: 0, IP: 17, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 114}, DR: 114}
-  DEBUG:root:{TICK: 18, ACC: 114, IR: 0, OR: 0, IP: 18, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x8'}, DR: 114}
-  DEBUG:root:{TICK: 19, ACC: 108, IR: 0, OR: 0, IP: 19, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
-  DEBUG:root:{TICK: 20, ACC: 108, IR: 0, OR: 0, IP: 20, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x9'}, DR: 108}
-  DEBUG:root:{TICK: 21, ACC: 100, IR: 0, OR: 0, IP: 21, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 100}, DR: 100}
-  DEBUG:root:{TICK: 22, ACC: 100, IR: 0, OR: 0, IP: 22, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x10'}, DR: 100}
-  DEBUG:root:{TICK: 23, ACC: 33, IR: 0, OR: 0, IP: 23, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 33}, DR: 33}
-  DEBUG:root:{TICK: 24, ACC: 33, IR: 0, OR: 0, IP: 24, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x11'}, DR: 33}
-  DEBUG:root:{TICK: 25, ACC: 72, IR: 0, OR: 0, IP: 25, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 72}
-  INFO:root:output: [] << 'H'
-  DEBUG:root:{TICK: 26, ACC: 72, IR: 0, OR: 0, IP: 26, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 27, ACC: 101, IR: 0, OR: 0, IP: 27, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x1'}, DR: 101}
-  INFO:root:output: ['H'] << 'e'
-  DEBUG:root:{TICK: 28, ACC: 101, IR: 0, OR: 0, IP: 28, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 29, ACC: 108, IR: 0, OR: 0, IP: 29, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x2'}, DR: 108}
-  INFO:root:output: ['H', 'e'] << 'l'
-  DEBUG:root:{TICK: 30, ACC: 108, IR: 0, OR: 0, IP: 30, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 31, ACC: 108, IR: 0, OR: 0, IP: 31, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x3'}, DR: 108}
-  INFO:root:output: ['H', 'e', 'l'] << 'l'
-  DEBUG:root:{TICK: 32, ACC: 108, IR: 0, OR: 0, IP: 32, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 33, ACC: 111, IR: 0, OR: 0, IP: 33, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x4'}, DR: 111}
-  INFO:root:output: ['H', 'e', 'l', 'l'] << 'o'
-  DEBUG:root:{TICK: 34, ACC: 111, IR: 0, OR: 0, IP: 34, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 35, ACC: 32, IR: 0, OR: 0, IP: 35, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x5'}, DR: 32}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o'] << ' '
-  DEBUG:root:{TICK: 36, ACC: 32, IR: 0, OR: 0, IP: 36, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 37, ACC: 119, IR: 0, OR: 0, IP: 37, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x6'}, DR: 119}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' '] << 'w'
-  DEBUG:root:{TICK: 38, ACC: 119, IR: 0, OR: 0, IP: 38, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 39, ACC: 111, IR: 0, OR: 0, IP: 39, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x7'}, DR: 111}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w'] << 'o'
-  DEBUG:root:{TICK: 40, ACC: 111, IR: 0, OR: 0, IP: 40, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 41, ACC: 114, IR: 0, OR: 0, IP: 41, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x8'}, DR: 114}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o'] << 'r'
-  DEBUG:root:{TICK: 42, ACC: 114, IR: 0, OR: 0, IP: 42, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 43, ACC: 108, IR: 0, OR: 0, IP: 43, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x9'}, DR: 108}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r'] << 'l'
-  DEBUG:root:{TICK: 44, ACC: 108, IR: 0, OR: 0, IP: 44, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 45, ACC: 100, IR: 0, OR: 0, IP: 45, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x10'}, DR: 100}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l'] << 'd'
-  DEBUG:root:{TICK: 46, ACC: 100, IR: 0, OR: 0, IP: 46, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
-  DEBUG:root:{TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x11'}, DR: 33}
-  INFO:root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
-  DEBUG:root:{TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}                                                                    
-  INFO:root:output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
+  DEBUG    root:{TICK: 1, ACC: 72, IR: 0, OR: 0, IP: 1, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 72}, DR: 72}
+  DEBUG    root:{TICK: 2, ACC: 72, IR: 0, OR: 0, IP: 2, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x0'}, DR: 72}
+  DEBUG    root:{TICK: 3, ACC: 101, IR: 0, OR: 0, IP: 3, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 101}, DR: 101}
+  DEBUG    root:{TICK: 4, ACC: 101, IR: 0, OR: 0, IP: 4, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x1'}, DR: 101}
+  DEBUG    root:{TICK: 5, ACC: 108, IR: 0, OR: 0, IP: 5, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
+  DEBUG    root:{TICK: 6, ACC: 108, IR: 0, OR: 0, IP: 6, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x2'}, DR: 108}
+  DEBUG    root:{TICK: 7, ACC: 108, IR: 0, OR: 0, IP: 7, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
+  DEBUG    root:{TICK: 8, ACC: 108, IR: 0, OR: 0, IP: 8, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x3'}, DR: 108}
+  DEBUG    root:{TICK: 9, ACC: 111, IR: 0, OR: 0, IP: 9, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 111}, DR: 111}
+  DEBUG    root:{TICK: 10, ACC: 111, IR: 0, OR: 0, IP: 10, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x4'}, DR: 111}
+  DEBUG    root:{TICK: 11, ACC: 32, IR: 0, OR: 0, IP: 11, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 32}, DR: 32}
+  DEBUG    root:{TICK: 12, ACC: 32, IR: 0, OR: 0, IP: 12, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x5'}, DR: 32}
+  DEBUG    root:{TICK: 13, ACC: 119, IR: 0, OR: 0, IP: 13, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 119}, DR: 119}
+  DEBUG    root:{TICK: 14, ACC: 119, IR: 0, OR: 0, IP: 14, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x6'}, DR: 119}
+  DEBUG    root:{TICK: 15, ACC: 111, IR: 0, OR: 0, IP: 15, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 111}, DR: 111}
+  DEBUG    root:{TICK: 16, ACC: 111, IR: 0, OR: 0, IP: 16, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x7'}, DR: 111}
+  DEBUG    root:{TICK: 17, ACC: 114, IR: 0, OR: 0, IP: 17, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 114}, DR: 114}
+  DEBUG    root:{TICK: 18, ACC: 114, IR: 0, OR: 0, IP: 18, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x8'}, DR: 114}
+  DEBUG    root:{TICK: 19, ACC: 108, IR: 0, OR: 0, IP: 19, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 108}, DR: 108}
+  DEBUG    root:{TICK: 20, ACC: 108, IR: 0, OR: 0, IP: 20, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x9'}, DR: 108}
+  DEBUG    root:{TICK: 21, ACC: 100, IR: 0, OR: 0, IP: 21, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 100}, DR: 100}
+  DEBUG    root:{TICK: 22, ACC: 100, IR: 0, OR: 0, IP: 22, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x10'}, DR: 100}
+  DEBUG    root:{TICK: 23, ACC: 33, IR: 0, OR: 0, IP: 23, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': 33}, DR: 33}
+  DEBUG    root:{TICK: 24, ACC: 33, IR: 0, OR: 0, IP: 24, CR: {'opcode': <Opcode.ST: 'st'>, 'arg1': '0x11'}, DR: 33}
+  DEBUG    root:{TICK: 25, ACC: 72, IR: 0, OR: 0, IP: 25, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x0'}, DR: 72}
+  INFO     root:output: [] << 'H'
+  DEBUG    root:{TICK: 26, ACC: 72, IR: 0, OR: 0, IP: 26, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 27, ACC: 101, IR: 0, OR: 0, IP: 27, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x1'}, DR: 101}
+  INFO     root:output: ['H'] << 'e'
+  DEBUG    root:{TICK: 28, ACC: 101, IR: 0, OR: 0, IP: 28, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 29, ACC: 108, IR: 0, OR: 0, IP: 29, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x2'}, DR: 108}
+  INFO     root:output: ['H', 'e'] << 'l'
+  DEBUG    root:{TICK: 30, ACC: 108, IR: 0, OR: 0, IP: 30, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 31, ACC: 108, IR: 0, OR: 0, IP: 31, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x3'}, DR: 108}
+  INFO     root:output: ['H', 'e', 'l'] << 'l'
+  DEBUG    root:{TICK: 32, ACC: 108, IR: 0, OR: 0, IP: 32, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 33, ACC: 111, IR: 0, OR: 0, IP: 33, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x4'}, DR: 111}
+  INFO     root:output: ['H', 'e', 'l', 'l'] << 'o'
+  DEBUG    root:{TICK: 34, ACC: 111, IR: 0, OR: 0, IP: 34, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 35, ACC: 32, IR: 0, OR: 0, IP: 35, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x5'}, DR: 32}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o'] << ' '
+  DEBUG    root:{TICK: 36, ACC: 32, IR: 0, OR: 0, IP: 36, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 37, ACC: 119, IR: 0, OR: 0, IP: 37, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x6'}, DR: 119}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' '] << 'w'
+  DEBUG    root:{TICK: 38, ACC: 119, IR: 0, OR: 0, IP: 38, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 39, ACC: 111, IR: 0, OR: 0, IP: 39, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x7'}, DR: 111}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w'] << 'o'
+  DEBUG    root:{TICK: 40, ACC: 111, IR: 0, OR: 0, IP: 40, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 41, ACC: 114, IR: 0, OR: 0, IP: 41, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x8'}, DR: 114}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o'] << 'r'
+  DEBUG    root:{TICK: 42, ACC: 114, IR: 0, OR: 0, IP: 42, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 43, ACC: 108, IR: 0, OR: 0, IP: 43, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x9'}, DR: 108}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r'] << 'l'
+  DEBUG    root:{TICK: 44, ACC: 108, IR: 0, OR: 0, IP: 44, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 45, ACC: 100, IR: 0, OR: 0, IP: 45, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x10'}, DR: 100}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l'] << 'd'
+  DEBUG    root:{TICK: 46, ACC: 100, IR: 0, OR: 0, IP: 46, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}
+  DEBUG    root:{TICK: 47, ACC: 33, IR: 0, OR: 0, IP: 47, CR: {'opcode': <Opcode.LD: 'ld'>, 'arg1': '0x11'}, DR: 33}
+  INFO     root:output: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd'] << '!'
+  DEBUG    root:{TICK: 48, ACC: 33, IR: 0, OR: 0, IP: 48, CR: {'opcode': <Opcode.PRINT: 'print'>, 'arg1': 1}, DR: 1}                                                                    
+  INFO     root:output:  ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'], ticks: 49
 
 output: |
   Output buffer: Hello world! | ticks: 49 | amount_instr: 49
