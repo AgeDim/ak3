@@ -76,7 +76,12 @@ def parse(filename):
 
 def translate(filename):
     global address_instr_mem, stack
-    code = parse(filename)
+    temp = parse(filename)
+    code = []
+    for i in temp:
+        i = i.strip()
+        code.append(i)
+
     for i in range(0, len(code)):
         if re.fullmatch(regex_patterns.get("ld"), code[i]) is not None:
             parse_ld_instr(code[i])
