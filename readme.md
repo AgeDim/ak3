@@ -47,19 +47,19 @@ let n = 2520;
 let i = 20;
 while (i > 0)
 {
-if (n % i == 0)
-{
-i = i - 1;
-}
-else
-{
-n = n + 2520;
-i = 20;
-}
-if (i == 1)
-{
-print(n);
-}
+    if (n % i == 0)
+    {
+        i = i - 1;
+    }
+    else
+    {
+        n = n + 2520;
+        i = 20;
+    }
+    if (i == 1)
+    {
+        print(n);
+    }
 }
 ```
 
@@ -173,8 +173,8 @@ let temp = "";
 input(temp);
 while (temp != EOF)
 {
-print(temp);
-input(temp);
+    print(temp);
+    input(temp);
 }
 ```
 
